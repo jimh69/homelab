@@ -1,0 +1,10 @@
+#  podinfo kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  # This points to a public Helm chart for podinfo
+  - github.com/stefanprodan/podinfo//kustomize?ref=master
+namespace: podinfo
+images:
+  - name: ghcr.io/stefanprodan/podinfo
+    newTag: 6.5.0 # Pins a specific version
