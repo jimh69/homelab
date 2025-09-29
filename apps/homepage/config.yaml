@@ -6,4 +6,11 @@ metadata:
   namespace: homepage
 data:
   config.yaml: |
-    # Empty config to start - will show default widgets
+    # Homepage Configuration
+    # This empty config will use defaults
+    
+    # You can add services later like:
+    # services:
+    #   - Kubernetes:
+    #       icon: kubernetes.png
+    #       href: https://kubernetes.io/

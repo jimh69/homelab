@@ -23,8 +23,7 @@ spec:
           value: "3000"
         volumeMounts:
         - name: config
-          mountPath: /app/config.yaml
-          subPath: config.yaml
+          mountPath: /app/config
       volumes:
       - name: config
         configMap:
