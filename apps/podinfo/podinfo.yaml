@@ -1,4 +1,4 @@
-# clusters/production/apps/podinfo.yaml
+#  podinfo.yaml
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s # Check for changes every 10 minutes
-  path: "./podinfo" # Path within the repository to the Kustomize file
+  path: "./" # Path within the repository to the Kustomize file
   prune: true # Delete resources if they are removed from the repo
   sourceRef:
     kind: GitRepository
