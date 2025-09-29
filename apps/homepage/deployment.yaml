@@ -15,14 +15,9 @@ spec:
     spec:
       containers:
       - name: homepage
-        image: ghcr.io/benphelps/homepage:latest
+        image: ghcr.io/gethomepage/homepage:latest 
         ports:
         - containerPort: 3000
         env:
         - name: PORT
           value: "3000"
-        # Add security context to allow writing
-        securityContext:
-          runAsUser: 1001
-          runAsGroup: 1001
-          allowPrivilegeEscalation: false
