@@ -15,9 +15,15 @@ spec:
     spec:
       containers:
       - name: homepage
-        image: ghcr.io/gethomepage/homepage:latest 
+        image: ghcr.io/gethomepage/homepage:latest
         ports:
         - containerPort: 3000
         env:
         - name: PORT
           value: "3000"
+        volumeMounts:          
+        - mountPath: /app/config
+          name: config
+      volumes:                 
+      - emptyDir: {}
+        name: config
