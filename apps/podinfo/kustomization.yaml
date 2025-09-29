@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   # This points to a public Helm chart for podinfo
   - github.com/stefanprodan/podinfo//kustomize?ref=master
+  - namespace.yaml
 namespace: podinfo
 images:
   - name: ghcr.io/stefanprodan/podinfo
