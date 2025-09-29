@@ -1,0 +1,9 @@
+# apps/homepage/config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homepage-config
+  namespace: homepage
+data:
+  config.yaml: |
+    # Empty config to start - will show default widgets
