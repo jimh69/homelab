@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./clusters
+  path: ./   # correction to repo root path
   prune: true
   sourceRef:
     kind: GitRepository
