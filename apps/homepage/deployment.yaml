@@ -21,3 +21,11 @@ spec:
         env:
         - name: PORT
           value: "3000"
+        volumeMounts:
+        - name: config
+          mountPath: /app/config.yaml
+          subPath: config.yaml
+      volumes:
+      - name: config
+        configMap:
+          name: homepage-config
